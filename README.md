@@ -54,7 +54,7 @@ Note: If you want to run the inference on a video, download a video of related p
 #### Now if you want to train with your custom dataset, you need to follow the following steps.
 
 #### Dataset preparation 
-First organize your images within the following manner-
+First organize your images within the following manner- 
 
     data/
         raw/
