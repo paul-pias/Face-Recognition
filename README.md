@@ -18,7 +18,7 @@ You can install all the dependencies at once by running the following command fr
     $ pip3 install torch===1.2.0 torchvision===0.4.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 ### Project Setup
-In the <b> data/facebank </b> you will find a trained model named <b> "facebank.pth" <b/> which contains the related weights and "names.npy" contains the corresponding labels of the users that are avialable in the facebank folder. For instance in this case
+In the <b> data/facebank </b> you will find a trained model named <b> "facebank.pth" </b> which contains the related weights and "names.npy" contains the corresponding labels of the users that are avialable in the facebank folder. For instance in this case
 the <b> facebank </b> folder will look like this :-
 
     facebank/
