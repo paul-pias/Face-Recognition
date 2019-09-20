@@ -48,7 +48,7 @@ http://localhost:5000
 
 
 <hr>
-Note: If you want to run the inference on a video, download a video of related persons (Person that you trained the model with) and replace 0 in the line number 43 of <b> face_verify.py </b> with the path of your video file. For this code you can run the inference on any video of Friedns tv series.
+Note: If you want to run the inference on a video, download a video of related persons (Person that you trained the model with) and replace 0 in the line number 43 of <b> face_verify.py </b> with the path of your video file. For this code you can run the inference on any video of <b> Friends</b> tv series.
 <hr>
 
 #### Now if you want to train with your custom dataset, you need to follow the following steps.
@@ -114,9 +114,9 @@ Although i provided the pretrained model in the <b> work_space/model </b> folder
 
 I have used the <b>IR-SE50</b> as the pretrained model to train with my custom dataset. You need to copy the pretrained model and save it under the <b> work_space/save </b> folder as <b> model_final.pth</b>
 
-Now to train with your dataset, you need to set <b> args.update == True </b> in line 35 of face_verify.py . You will get a new facebank.pth and names.npy in your data/facebank folder which will now only holds the weights and labels of your newly trained dataset. Once the training is done you need to reset <b> args.update==False</b>.
+Now to train with your dataset, you need to set <b> args.update == True </b> in line 35 of face_verify.py . After training you will get a new facebank.pth and names.npy in your data/facebank folder which will now only holds the weights and labels of your newly trained dataset. Once the training is done you need to reset <b> args.update==False</b>.
 However, if this doesn't work change the code in following manner-
-<br> Old Code </br>
+#### Old Code 
 ```python
     if args.update:
         targets, names = prepare_facebank(conf, learner.model, mtcnn, tta = args.tta)
@@ -125,7 +125,7 @@ However, if this doesn't work change the code in following manner-
         targets, names = load_facebank(conf)
         print('facebank loaded')
 ```
-<br> New Code </br>
+#### New Code 
 Only keep the follwing lines for training, once the training is done just replace it with the old code.
 ```python
         targets, names = prepare_facebank(conf, learner.model, mtcnn, tta = args.tta)
