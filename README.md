@@ -129,6 +129,7 @@ Now you are ready to test the systen with your newly trained users by running-
 
 
 <hr>
+
 ### Retrain the pre-trained model
 
  If you want to build a new pre-trained model like [IR-SE50 @ Onedrive](https://onedrive.live.com/?authkey=%21AOw5TZL8cWlj10I&cid=CEC0E1F8F0542A13&id=CEC0E1F8F0542A13%21835&parId=root&action=locate) and reproduce the result, you will need the large files which contains several dataset of faces under the <b> data/faces_emore </b>.
