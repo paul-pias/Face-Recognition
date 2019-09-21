@@ -38,15 +38,14 @@ if args.update:
 else:
     targets, names = load_facebank(conf)
     print('facebank loaded')
-        # inital camera
-# E:\Arc-Face\data\facebank
+
+# inital camera
+
 cap = cv2.VideoCapture(0)
 cap.set(3,500)
 cap.set(4,500)
 
-# if args.save:
-#     video_writer = cv2.VideoWriter(conf.data_path/'recording.avi', cv2.VideoWriter_fourcc(*'XVID'), 6, (1280,720))
-#     # frame rate 6 due to my laptop is quite slow...
+
 class faceRec:
     def __init__(self):
         self.width = 800
@@ -76,13 +75,10 @@ class faceRec:
                 return jpeg.tostring()
                 # cv2.imshow('Arc Face Recognizer', frame)
 
-            # if args.save:
-            #     video_writer.write(frame)
 
             if cv2.waitKey(1)&0xFF == ord('q'):
                 break
 
         cap.release()
-        # if args.save:
-        #     video_writer.release()
+
         cv2.destroyAllWindows()    

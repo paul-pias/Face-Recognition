@@ -27,5 +27,5 @@ def video_feed():
 
 if __name__ == '__main__':
     # Serve the app with gevent
-    http_server = WSGIServer(('localhost', 8888), app)
+    http_server = WSGIServer(('localhost', 5000), app)
     http_server.serve_forever()
