@@ -156,7 +156,7 @@ After that you will see the following files to the "data/faces_emore" folder.
                 ---> lfw
                 ---> vgg2_fp
 
-To know the further training procedure you see the details in this [InsightFace_Pytorch](https://github.com/TreB1eN/InsightFace_Pytorch) repository.
+To know the further training procedure you can see the details in this [InsightFace_Pytorch](https://github.com/TreB1eN/InsightFace_Pytorch) repository.
 
 ## References
 - [Arcface](https://arxiv.org/pdf/1801.07698.pdf)
