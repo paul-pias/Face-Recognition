@@ -119,6 +119,12 @@ Only keep the follwing lines for training, once the training is done just replac
         targets, names = prepare_facebank(conf, learner.model, mtcnn, tta = args.tta)
         print('facebank updated')
 ````
+Or you can simply pass a command line arguement such as below if there is new data to train.
+```python
+   $python face_verify.py -u
+```
+Here the -u parse the command to update the facebank.pth and names.npy.
+
 Now you are ready to test the systen with your newly trained users by running-
 
 ```python
