@@ -47,6 +47,6 @@ def get_config(training = True):
         conf.threshold = 1.5
         conf.face_limit = 10 
         #when inference, at maximum detect 10 faces in one image,
-        conf.min_face_size = 59
+        conf.min_face_size = 35
         # the larger this value, the faster deduction, comes with tradeoff in small faces
     return conf
