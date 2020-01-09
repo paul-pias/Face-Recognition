@@ -68,9 +68,13 @@ class faceRec:
                         if args.score:
                             frame = draw_box_name(bbox, names[results[idx] + 1] + '_{:.2f}'.format(score[idx]), frame)
                         else:
+                            if float('{:.2f}'.format(score[idx])) > .98:
+                                name = names[0]
+                            else:    
+                                name = names[results[idx]+1]
                             frame = draw_box_name(bbox, names[results[idx] + 1], frame)
                 except:
-                    print('Unknown Face')    
+                    pass    
                 ret, jpeg = cv2.imencode('.jpg', frame)
                 return jpeg.tostring()
                 # cv2.imshow('Arc Face Recognizer', frame)
