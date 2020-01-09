@@ -141,13 +141,16 @@ def gen_plot(fpr, tpr):
     return buf
 
 def draw_box_name(bbox,name,frame):
-    frame = cv2.rectangle(frame,(bbox[0],bbox[1]),(bbox[2],bbox[3]),(0,0,255),6)
-    frame = cv2.putText(frame,
-                    name,
-                    (bbox[0],bbox[1]), 
-                    cv2.FONT_HERSHEY_SIMPLEX, 
-                    2,
-                    (0,255,0),
-                    3,
-                    cv2.LINE_AA)
+    if name == "Unknown":
+        frame = cv2.rectangle(frame,(bbox[0],bbox[1]),(bbox[2],bbox[3]),(0,0,000),6)
+    else:
+        frame = cv2.rectangle(frame,(bbox[0],bbox[1]),(bbox[2],bbox[3]),(0,0,000),6)
+        frame = cv2.putText(frame,
+                        name,
+                        (bbox[0],bbox[1]), 
+                        cv2.FONT_HERSHEY_SIMPLEX, 
+                        2,
+                        (0,255,0),
+                        3,
+                        cv2.LINE_AA)
     return frame
