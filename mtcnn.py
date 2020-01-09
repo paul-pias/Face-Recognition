@@ -38,8 +38,8 @@ class MTCNN():
         return boxes, faces
 
     def detect_faces(self, image, min_face_size=20.0,
-                    thresholds=[0.6, 0.7, 0.8],
-                    nms_thresholds=[0.7, 0.7, 0.7]):
+                    thresholds=[0.9, 0.8, 0.8],
+                    nms_thresholds=[0.9, 0.9, 0.8]):
         """
         Arguments:
             image: an instance of PIL.Image.
