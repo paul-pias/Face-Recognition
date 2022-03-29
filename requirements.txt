@@ -15,5 +15,5 @@ scikit_learn==0.21.3
 tensorboardX==1.8
 torch
 torchvision
-numpy==1.16.1
+numpy==1.21.0
 
