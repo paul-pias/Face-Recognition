@@ -1,7 +1,7 @@
 Flask==1.1.1
 scipy==1.1.0
 matplotlib
-Werkzeug==0.15.5
+Werkzeug==2.2.3
 easydict==1.9
 opencv_python==3.4.1.15
 mxnet_mkl==1.6.0b20190914
